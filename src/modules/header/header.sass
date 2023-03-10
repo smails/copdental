@@ -1,0 +1,81 @@
+.header
+  padding: 3rem 0 2.5rem
+  background: $c2
+  color: #fff
+  position: relative
+  z-index: 3
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__info
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    gap: 30px
+  &__phone
+    +fs(18px)
+    font-weight: 500
+    transition: .5s ease
+    &:hover
+      color: $c4
+  &__social
+    display: flex
+  &__sc
+    margin-left: 10px
+    display: inline-block
+    svg
+      width: 25px
+      vertical-align: middle
+    path
+      transition: .5s ease
+      fill: #fff
+    &:hover
+      path
+        fill: $c4
+  &__nav
+    margin-top: 1.5rem
+    ul
+      &:not(.sub-menu)
+        display: flex
+        justify-content: flex-end
+        gap: 15px
+    li
+      margin-bottom: 0
+      position: relative
+      padding: 1rem 0
+      &:hover
+        .sub-menu
+          display: block
+      &.menu-item-has-children
+        padding-right: 20px
+        &:before
+          content: ''
+          width: 15px
+          height: 10px
+          background-image: url(../copdental/icon/arrow-down.svg)
+          background-repeat: no-repeat
+          background-position: center
+          position: absolute
+          right: 0
+          top: 18px
+          background-size: cover
+    a
+      font-weight: 500
+      transition: .5s ease
+      &:hover
+        color: $c4
+    .sub-menu
+      position: absolute
+      top: 100%
+      right: 0
+      padding: 10px 20px
+      box-sizing: border-box
+      background: $c3
+      display: none
+      z-index: 99
+      li
+        margin-bottom: 10px
+        white-space: nowrap
+        &:last-of-type
+          margin-bottom: 0

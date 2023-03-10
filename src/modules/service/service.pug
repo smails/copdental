@@ -1,0 +1,13 @@
++b.service.section
+  +e.inner.inner
+    +e.P.sign Tu dentista en Badalona
+    +e.H3.title Nuestros Tratamientos Dentales
+    +e.list
+      each item, index in ['Tratamientos Integrales', 'Higiene Dental', 'Blanqueamiento Dental', 'Implantes Dentales', 'Estética Dental', 'Carillas Dentales', 'Tratamientos de Ortodoncia', 'Urgencias Odontológicas', 'Medicina Estética']
+        +e.item
+          +e.IMG.pic(src='/img/service-' + index + '.jpg' alt='')
+          +e.content
+            +e.P.parents Tratamientos
+            +e.H3.caption.display-4=item
+            +e.txt Nulla luctus, lacus sagittis efficitur ullamcorper, justo quam laoreet magna, eget lobortis. Nulla luctus, lacus sagittis efficitur ullamcorper, justo quam laoreet magna, eget lobortis.
+            +e.A.more.btn(href="#") Saber más

@@ -1,0 +1,99 @@
+html
+  font-size: 10px
+body
+  font-size: 16px
+  font-weight: 400
+  font-family: $font-family
+
+.inner
+  max-width: 1130px
+  width: 100%
+  padding: 0 4rem
+  margin: 0 auto
+  +screen('max', 1210px)
+    box-sizing: border-box
+
+.section
+  margin: 6.5rem 0
+
+.slick-arrow
+  position: absolute
+  top: 50%
+  width: 35px
+  height: 35px
+  display: block
+  transform: translateY(-40%)
+  svg
+    width: 100%
+    height: 100%
+  path
+    transition: .5s ease
+  &:hover
+    path
+      fill: $c3
+  &.slick-prev
+    left: -2.5vw
+  &.slick-next
+    right: -2.5vw
+.slick-slide
+  height: auto
+
+.content-service-box
+  display: flex
+  justify-content: space-between
+  align-items: center
+  gap: 20px
+  margin: 50px 0
+  &:nth-of-type(2n)
+    flex-flow: row-reverse
+  &__content
+    width: 50%
+    flex-shrink: 0
+  &__pic
+    max-width: 50%
+    vertical-align: middle
+  &__title
+    margin-bottom: 20px
+  &__text
+    ul, ol
+      list-style: initial
+    p
+      margin-bottom: 10px
+
+.clinic-box
+  display: flex
+  justify-content: space-between
+  align-items: center
+  gap: 20px
+  margin: 50px 0
+  &:nth-of-type(2n)
+    flex-flow: row-reverse
+  &__content
+    width: 50%
+    flex-shrink: 0
+    text-align: center
+  &__pic
+    max-width: 50%
+    vertical-align: middle
+  &__title
+    margin-bottom: 20px
+  &__text
+    ul, ol
+      list-style: initial
+    p
+      margin-bottom: 10px
+  &__call
+    margin-top: 2rem
+
+.blog-single
+  &__text
+    margin-top: 2rem
+    ul, ol
+      list-style: initial
+    p
+      margin-bottom: 10px
+  &__info
+    +fs(14px)
+    margin-top: 2rem
+    line-height: 1
+    color: $c4
