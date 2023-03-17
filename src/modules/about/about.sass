@@ -4,9 +4,17 @@
     justify-content: space-between
     align-items: center
     gap: 100px
+    +screen('max', 1130)
+      gap: 50px
+    +screen('max', 700)
+      display: block
     picture
       max-width: 565px
       flex-shrink: 0
+      +screen('max', 1130)
+        width: 45%
+      +screen('max', 700)
+        width: 100%
   &__pic
     width: 100%
     vertical-align: middle
@@ -21,3 +29,6 @@
     line-height: 1.5
     +fs(15px)
     font-weight: 500
+  &__content
+    +screen('max', 700)
+      margin-top: 20px

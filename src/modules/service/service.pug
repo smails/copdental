@@ -5,7 +5,8 @@
     +e.list
       each item, index in ['Tratamientos Integrales', 'Higiene Dental', 'Blanqueamiento Dental', 'Implantes Dentales', 'Estética Dental', 'Carillas Dentales', 'Tratamientos de Ortodoncia', 'Urgencias Odontológicas', 'Medicina Estética']
         +e.item
-          +e.IMG.pic(src='/img/service-' + index + '.jpg' alt='')
+          +e.A.link(href="#")
+            +e.IMG.pic(src='/img/service-' + index + '.jpg' alt='')
           +e.content
             +e.P.parents Tratamientos
             +e.H3.caption.display-4=item

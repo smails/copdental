@@ -34,11 +34,17 @@
   position: relative
   z-index: 2
   margin-top: -96px
+  +screen('max', 700)
+    margin-top: -45px
   &__inner
     display: grid
     grid-template-columns: repeat(4, 1fr)
     grid-auto-rows: 192px
     grid-gap: 8px
+    +screen('max', 992)
+      grid-template-columns: repeat(2, 1fr)
+    +screen('max', 700)
+      grid-auto-rows: 120px
   &__box
     border-radius: 8px
     background: $c2
@@ -68,6 +74,9 @@
     display: inline-block
     position: relative
     z-index: 2
+    +screen('max', 700)
+      width: 40px
+      height: 40px
   &__pic
     max-height: 100%
     max-width: 100%
@@ -81,6 +90,8 @@
     line-height: 1
     position: relative
     z-index: 2
+    +screen('max', 700)
+      +fs(13px)
   &__more
     display: inline-block
     margin-top: 1.5rem
@@ -90,3 +101,5 @@
     transition: .5s ease
     &:hover
       color: $c4
+    +screen('max', 700)
+      +fs(12px)
